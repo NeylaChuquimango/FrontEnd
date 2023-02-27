@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
+      /* body {
         margin: 0;
       }
       div {
@@ -18,20 +18,36 @@
       }
       a {
         background: skyblue;
-        width: 100px; /*no aplica, solo se aplica de manera interna*/
-        height: 100px; /*no aplica*/
+        width: 100px; 
+        height: 100px; 
         margin: 20px;
       }
       button {
         background: slateblue;
         width: 50px;
         height: 50px;
+      } */
+
+      header {
+        /*display flex solo se a los padres de los elementos */
+        display: flex;
+        justify-content: space-between;
+        background: papayawhip;
+        padding:15px ;
+      }
+      .header-child {
+        background: skyblue;
+        padding: 5px;
       }
     </style>
   </head>
   <body>
-    <div>bloque</div>
+    <!-- <div>bloque</div>
     <a href="/">inline</a>
-    <button>inline block</button>
+    <button>inline block</button> -->
+    <header>
+      <picture class="header-child">Soy un logo UwU</picture>
+      <nav class="header-child">Soy un menú de navegación</nav>
+    </header>
   </body>
 </html>
